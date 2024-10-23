@@ -1,0 +1,88 @@
+-hashdeep -V
+Check hashdeep Version
+
+-man hashdeep
+-man md5
+Manual Page for hashdeep and md5deep
+
+- vi shreya.txt
+
+- hashdeep -s shreya.txt
+
+- hashdeep -b shreya.txt
+
+- hashdeep -c md5,sh1,sha256,tiger shreya.txt
+
+- hashdeep -b hashset.txt
+
+ls
+
+- hashdeep -c md5 *.txt
+
+- hashdeep -c md5,sha1,sh256,tiger *.txt
+
+- wc -c shreya.txt
+
+- hashdeep -c md5 -p 100 shreya.txt
+
+-hashdeep -c md5 -p 100 file2.txt
+
+- hashdeep c md5 -r /home/shreya
+
+- md5deep *.txt>hashtxt.txt
+
+-cat hashtxt.txt
+
+-hashdeep -m hashtxt.txt *
+
+-hashdeep *.txt>hashtxt2.txt
+
+-cat hashtxt2.txt
+
+- hashdeep -m -k hashtxt2.txt *
+
+- md5deep -s -x hashtxt.txt *
+
+- hashdeep -s -x hashtxt2.txt *
+- hashdeep -s -m hashtxt2.txt *
+
+-md5deep -m hashtxt.txt *
+
+
+
+//Auditing for pracs
+Forensic auditing can be done using hashdeep tool which means a 
+check to determine if any files in the system are changed due to malware 
+or any normal system operation like update patching. 
+- To audit, first create a hashset file and then audit it against the files 
+to be checked if they are modified. 
+hashdeep -c md5,sha1,sha256 -r /home/shachi/myfiles>hashset1.txt 
+hashdeep -a -r -k hashset1.txt  /home/shachi/myfiles 
+
+-Add new file to the directory and audit. It fails.
+touch  /home/shachi/myfiles/newfile.txt 
+hashdeep -a -r -k hashset1.txt  /home/shachi/myfiles 
+
+- To get where it failed use the command with -v option
+hashdeep -v -a -r -k hashset1.txt  /home/shachi/myfiles 
+
+-Move one of the files to another directory and audit n see output 
+mv /home/shachi/myfiles/example.txt   /tmp 
+hashdeep -v -a -r -k hashset1.txt   /home/shachi/myfiles 
+
+-21. Rename one of the files and audit n see the output 
+mv /home/shachi/myfiles/shachi.txt   /home/shachi/myfiles/shachi.bak 
+hashdeep -v -a -r -k hashset1.txt  /home/shachi/myfiles 
+
+- For verbose output of audit 
+hashdeep -vv -a -r -k hashset1.txt  /home/shachi/myfiles 
+hashdeep -vvv -a -r -k hashset1.txt  /home/shachi/myfiles
+
+
+
+
+
+
+
+
+

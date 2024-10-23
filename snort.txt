@@ -1,0 +1,22 @@
+Snort is an open-source network intrusion detection system (NIDS) capable of performing packet logging and real-time traffic analysis. It can detect threats and suspicious activity based on rules and patterns.
+//pinging activity
+
+Installation: Snort is available for both Linux and Windows. The installation involves 
+downloading the Snort package from its official source and following the setup process. 
+During installation, you specify the network interface that Snort will monitor. 
+
+Configuring Snort 
+-Configuration File: The main Snort configuration file specifies the network variables, rule 
+paths, and preprocessors . It also defines how Snort handles and logs alerts and what traffic patterns to monitor
+-Preprocessors: These are modular add-ons that extend Snort's capabilities, enabling it to 
+detect various network anomalies, such as port scanning or fragmented packets.
+
+Adding Rules 
+-Rules: Snort uses predefined rules to detect specific types of network activity that could 
+indicate malicious behavior. These rules define patterns, actions to take (such as logging 
+or alerting), and the traffic to inspect. Users can create custom rules or use 
+communitycontributed rule sets.  
+- Structure: A Snort rule consists of an action (alert, log, etc.), protocol, source/destination 
+IP addresses, ports, and specific options that define the detection logic.  
+
+

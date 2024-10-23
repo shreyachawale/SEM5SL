@@ -1,0 +1,35 @@
+- sudo apt install nmap
+
+- sudo nmap -sS www.google.com
+(TCP SYN Scan): A stealth scan that sends SYN packets to initiate the connection but doesn't complete the three-way TCP handshake.
+
+- sudo nmap -sT www.google.com
+(TCP Connect Scan): Completes the full TCP handshake (SYN, SYN-ACK, ACK). It is used when the SYN scan is not available 
+
+- sudo nmap -sU tsec.edu
+UDP Scan :This scan identifies open UDP ports on the target system by sending UDP packets. Since UDP doesn't have handshakes like TCP, it can be slower and more difficult to interpret due to its stateless nature.
+
+- sudo nmap -sN tsec.edu
+(Null Scan): Sends packets with no TCP flags set. This scan is used to evade simple firewall rules.
+
+- sudo nmap -sF tsec.edu
+(FIN Scan):Sends a packet with the FIN flag set. Some systems may treat this as an indication that a connection should be closed.
+
+- sudo nmap -sX tsec.edu
+(Xmas Scan): Sends packets with the FIN, PSH, and URG flags set.
+
+- sudo nmap -sO tsec.edu
+(IP Protocol Scan):Scans for different IP protocols (like TCP, UDP, ICMP) on the target system
+
+- nmap -p 1-100 tsec.edu
+(Port Range Selection):Allows the user to specify a custom range of ports to be scanned.
+
+- sudo nmap -F tsec.edu
+(Fast Scan):Scans only a limited number of well-known ports (about 100), which is faster than a full port scan.
+
+- sudo nmap -O tsec.edu
+(OS Detection):Attempts to determine the operating system of the target
+
+- sudo nmap -V tsec.edu
+(Verbose Mode):Enables detailed output, 
+

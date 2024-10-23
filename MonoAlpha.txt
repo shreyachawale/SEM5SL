@@ -1,0 +1,19 @@
+we learnt that the large key space is necesary for secrecy. However, we will now see that large key space is not always sufficient either.
+it is quite easily broken using "Frequency analysis" methods.
+To understand that just having a large keyspace is not enough to achieve secure encryption.
+
+For chapter 1 - down the rabbit hole: alice is bored sitting on the riverbank
+solution key: xcdqrlpkwzoufteyahnvisgjbm
+
+
+Theory:
+is a type of substitution cipher where each letter in the plaintext is replaced 
+by the same corresponding letter in the ciphertext. The substitution remains constant throughout the 
+encryption process.  
+Encryption Process:   
+where each letter in the alphabet is mapped to its respective substitution.  
+For example, 'A' is replaced with the first letter of the key, 'B' with the second letter, and so on. - Non-alphabetic characters are left unchanged in the ciphertext.   
+Decryption Process: - To decrypt the ciphertext, the receiver uses the same key to look up the corresponding plaintext letters for each letter in the ciphertext.   
+Brute Force Attack on Monoalphabetic Cipher:
+A brute force attack on a monoalphabetic cipher is not practical because there are 26! 
+Frequency Analysis Attack on Monoalphabetic Cipher:

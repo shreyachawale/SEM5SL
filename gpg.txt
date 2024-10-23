@@ -1,0 +1,67 @@
+-gpg --gen-key
+This command generates your GPG key pair (public and private keys). You will be prompted to choose key type, size, expiration, and provide your name, email, and a passphrase. Follow the prompts.
+choose rsa and rsa
+Key is valid for? (0) 0 (the key does not expire)
+Is this correct? (y/N) y
+Is this correct? (y/N) y
+Real name: Shreya
+Email address: shreya@gmail.com
+Comment: (press Enter for none)
+You need a passphrase to protect your secret key.
+
+same again new name
+everythin new
+jane
+
+-gpg --export -a Shreya > public.txt
+Exporting Your Public Key
+
+-gpg --export-secret-key -a Shreya > private.txt
+Exporting Your Private Key
+
+-gpg --fingerprint jane@gmail.com
+Getting a Key's Fingerprint
+
+- gpg --import public.txt
+
+- gpt --list-keys
+
+- gpg --sign-key jane@gmail.com
+
+- vi demo.txt
+(hello esp+shift+)
+
+-gpg --encrypt -r jane@gmail.com demo.txt
+
+- ls
+
+- gpg -o temp.txt -d demo.txt.gpg
+
+- cat temp.txt
+
+
+
+
+
+
+
+
+
+-gpg --import demo
+Importing Someone's Public Key
+
+-gpg --list-keys
+To check the list of all public and private keys stored in your keyring
+
+-vi test.txt
+create a file test.txt and encrypt it for Shreya
+
+-gpg --encrypt -r shreya@gmail.com test.txt
+encryption using public key
+
+-cat test.txt.gpg
+Viewing the Encrypted File
+
+-gpg -o decrypted_file -d test.txt.gpg
+Decrypting a File
+

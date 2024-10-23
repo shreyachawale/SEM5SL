@@ -1,0 +1,15 @@
+The Vigenère cipher is a simple form of polyalphabetic substitution.
+builds upon the simple Caesar cipher by introducing a keyword that determines the shifting pattern for each letter.
+
+How the Vigenere Cipher Works:   
+-Choosing a Keyword:
+-Matching the Keyword Length: Repeat the keyword to match the length of the plaintext you want to encrypt.
+-Converting to Numerical Values: Convert both the keyword and the plaintext into numerical values based on their positions in the alphabet.
+-Shifting with the Keyword: Starting with the first letter of the keyword and the corresponding letter in the plaintext, add their numerical values together (mod 26) to get the encrypted letter. In 
+our case: - Letter "H" (numerical value 7) + Letter "K" (numerical value 10) = 17, which correspond 5.
+-Convert the numerical values of the encrypted letters back to their corresponding letters in the alphabet. The encrypted version of "HELLO" with the keyword "KEY" is "RIFNP."  
+
+To simplify the process, the Vigenère cipher often uses a table known as the Vigenère square or Vigenère table. Each row of the table corresponds to a shift of the alphabet by one letter.
+
+The Kasiski Test is a cryptanalysis technique used to decipher the Vigenère cipher by determining the 
+length of the keyword used for encryption

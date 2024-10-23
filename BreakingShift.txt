@@ -1,0 +1,21 @@
+-also known as Caesar cipher
+-the shift cipher relies on shifting letters by a fixed amount
+
+
+PART 1: copy cipher text to part 3 cipertext text area
+
+start shifting till the plain text makes sense 
+
+paste in part 4 and shift key to check
+
+
+Theory:
+is a type of substitution cipher where each letter in the plaintext is shifted a certain number of positions down the alphabet.
+ENCRYPTION PROCESS:
+The shift value 'k' determines how many positions each letter is moved.
+For example, with a shift of 3, 'A' becomes 'D', 'B' becomes 'E', and so on
+The encryption formula is: E(x) = (x + k) mod 26, where 'x' is the numerical value of the letter and 'k' 
+is the shift value. 
+DECRYPTION PROCESS:
+ the receiver knows the shift value 'k' and simply 
+shifts each letter backward in the alphabet. - The decryption formula is: D(x) = (x - k) mod 26.  

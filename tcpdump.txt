@@ -1,0 +1,10 @@
+- sudo tcpdump -i wlan0
+
+- sudo tcpdump src www.google.com and port 80
+
+-sudo tcpdump dst www.google.com
+
+- sudo tcpdump dst www.google.com and '(dst portrange 8000-8000)' -v
+
+TCPDump is a powerful, command-line packet analyzer that allows users to capture and display network packets that are transmitted over a network interface.
+It is widely used by network administrators due to its low resource consumption and powerful filtering capabilities via the command line.

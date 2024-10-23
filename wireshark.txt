@@ -1,0 +1,4 @@
+Packet sniffing is a process used to capture and analyze network traffic.
+
+Wireshark is a powerful, open-source, GUI-based packet analyzer that allows users to capture and interactively browse the traffic running on a network.
+It supports a large number of network protocols and provides in-depth packet analysis with a graphical interface that makes it easier to work with large datasets.

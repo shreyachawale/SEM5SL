@@ -1,0 +1,2 @@
+The Playfair cipher is a digraph substitution cipher that encrypts pairs of letters (bigrams) instead of single letters, providing more security than simple monoalphabetic ciphers. 
+The encryption process uses a 5x5 grid of letters, where a key is used to fill the grid. The grid contains only 25 letters, and usually, the letter 'I' and 'J' are treated as the same letter to fit the alphabet into the grid.
